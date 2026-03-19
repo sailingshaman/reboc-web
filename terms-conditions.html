@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions — Reboc B.V.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #0a1628;
+            --blue-dark: #0f2847;
+            --blue-primary: #1a56db;
+            --blue-bright: #3b82f6;
+            --accent: #06b6d4;
+            --accent-light: #22d3ee;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray-800);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        /* ===== NAV ===== */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0.75rem 2rem;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo svg {
+            height: 36px;
+            width: auto;
+            transition: opacity 0.2s;
+        }
+
+        .logo:hover svg { opacity: 0.85; }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-links a:hover { color: var(--accent-light); }
+
+        .nav-cta {
+            background: var(--blue-primary);
+            color: var(--white) !important;
+            padding: 0.6rem 1.4rem;
+            border-radius: 8px;
+            transition: background 0.2s, transform 0.2s !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--blue-bright) !important;
+            transform: translateY(-1px);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            margin: 5px 0;
+            transition: all 0.3s;
+        }
+
+        /* ===== HEADER ===== */
+        .page-header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--blue-dark) 50%, #0c3466 100%);
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: var(--white);
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: var(--gray-400);
+            font-size: 1rem;
+        }
+
+        /* ===== CONTENT ===== */
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        .content h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .content h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .content p, .content li {
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .content ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .content ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            list-style: disc;
+        }
+
+        .content li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--navy);
+            color: var(--gray-400);
+            padding: 3rem 2rem;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        footer p { font-size: 0.85rem; }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--accent-light); }
+
+        .kvk-info {
+            font-size: 0.8rem;
+            color: var(--gray-600);
+            margin-top: 1.5rem;
+            text-align: center;
+            width: 100%;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 22, 40, 0.98);
+                flex-direction: column;
+                padding: 1.5rem 2rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active { display: flex; }
+            .mobile-toggle { display: block; }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-inner">
+            <a href="reboc-website.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" fill="none" aria-label="Reboc B.V.">
+                <path d="M10 108 L10 32 L58 32" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M88 70 L148 70 C148 46 132 28 120 28 C104 28 88 46 88 70 C88 94 104 112 120 112 C134 112 146 100 148 88" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <path d="M178 10 L178 112" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <path d="M178 70 C178 46 194 28 212 28 C228 28 244 46 244 70 C244 94 228 112 212 112 C196 112 178 94 178 70Z" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <ellipse cx="302" cy="70" rx="32" ry="42" stroke="white" stroke-width="3.5" fill="none"/>
+                <rect x="368" y="8" width="70" height="104" rx="3" fill="rgba(255,255,255,0.25)"/>
+                <path d="M428 52 C422 34 412 26 403 26 C387 26 374 44 374 70 C374 96 387 114 403 114 C412 114 422 106 428 88" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </svg></a>
+            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="reboc-website.html#services">Services</a></li>
+                <li><a href="reboc-website.html#about">About</a></li>
+                <li><a href="reboc-website.html#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="page-header">
+        <h1>Terms & Conditions</h1>
+        <p>Last updated — 2026</p>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>1. Introduction & Acceptance</h2>
+        <ol>
+            <li>These terms ("Terms") apply to all visitors, clients, and users of reboc.nl and to all services provided by Reboc B.V.</li>
+            <li>By accessing or using our website or services, you accept these Terms in full. If you do not agree, you must not use our site.</li>
+        </ol>
+
+        <h2>2. Definitions</h2>
+        <ul>
+            <li><strong>Reboc, we, us</strong> — Refers to Reboc B.V., based in The Netherlands.</li>
+            <li><strong>You, Client, Freelancer, User</strong> — Any person or entity interacting with Reboc's website or services.</li>
+            <li><strong>Customer</strong> — A third party introduced via Reboc, to whom a Client may provide services.</li>
+            <li><strong>Services</strong> — Intermediary, facilitation, invoicing, and administrative services offered by Reboc.</li>
+        </ul>
+
+        <h2>3. Services Overview</h2>
+        <ol>
+            <li>Reboc provides professional intermediary services by connecting Clients with Customers and facilitating invoicing and administration where required.</li>
+            <li>Reboc does not provide employment, nor does it act as a payroll service or employment agency.</li>
+            <li>Reboc may issue invoices to Customers on behalf of Clients and remit collected funds to the respective parties after deducting agreed service fees.</li>
+        </ol>
+
+        <h2>4. Eligibility & Access</h2>
+        <ol>
+            <li>You must be at least 18 years old and legally capable of entering into binding agreements.</li>
+            <li>You may use the website only for lawful purposes and in accordance with these Terms.</li>
+        </ol>
+
+        <h2>5. Use of Website</h2>
+        <ol>
+            <li>You agree not to misuse the website or submit false or misleading information via forms or contact methods.</li>
+            <li>Reboc retains all rights to restrict, suspend, or terminate your access in case of suspected misuse or breach of these Terms.</li>
+        </ol>
+
+        <h2>6. Fees & Payment</h2>
+        <ol>
+            <li>Our services are subject to fees, which are agreed upon in writing with each party before engagement.</li>
+            <li>If Reboc facilitates invoicing on behalf of a Client, payment to the Client shall occur only after full receipt of funds from the Customer.</li>
+            <li>Reboc is entitled to deduct any agreed fees or commissions prior to remittance.</li>
+            <li>All invoicing and payments are subject to applicable VAT regulations and reverse-charge mechanisms when required.</li>
+        </ol>
+
+        <h2>7. No Guarantee of Outcome</h2>
+        <ol>
+            <li>Reboc does not guarantee any outcome, such as placement, contract execution, or payment by Customers.</li>
+            <li>We are not liable for the performance or solvency of Customers or third parties.</li>
+        </ol>
+
+        <h2>8. Intellectual Property</h2>
+        <ol>
+            <li>All content on the website is owned or licensed by Reboc B.V.</li>
+            <li>You may not copy, reproduce, republish, or distribute any content without written permission.</li>
+            <li>Logos, brand elements, and content remain the intellectual property of Reboc.</li>
+        </ol>
+
+        <h2>9. Limitation of Liability</h2>
+        <ul>
+            <li>Reboc is not liable for indirect, consequential, reputational, or financial loss.</li>
+            <li>Reboc is not responsible for loss resulting from delayed or non-payment by Customers.</li>
+            <li>Clients indemnify Reboc against third-party claims resulting from services delivered by the Client, including tax or employment claims.</li>
+        </ul>
+
+        <h2>10. No Employment Relationship</h2>
+        <ol>
+            <li>Nothing in these Terms creates an employment relationship between Reboc and any Client or Customer.</li>
+            <li>There is no obligation for personal labour, no subordination, and no integration into the business operations of Reboc.</li>
+            <li>Clients act entirely independently and remain responsible for their own tax, social security, and regulatory obligations.</li>
+        </ol>
+
+        <h2>11. Data Protection & Privacy</h2>
+        <ol>
+            <li>Personal data is collected and processed in accordance with our Privacy Policy.</li>
+            <li>By using the site, you consent to our use of your data for service delivery, communication, and compliance.</li>
+        </ol>
+
+        <h2>12. Changes to Terms</h2>
+        <ol>
+            <li>Reboc may amend these Terms at any time. Changes will be published on the website.</li>
+            <li>Continued use of the website after changes constitutes acceptance of the updated Terms.</li>
+        </ol>
+
+        <h2>13. Governing Law & Dispute Resolution</h2>
+        <ol>
+            <li>These Terms are governed by Dutch law.</li>
+            <li>Disputes will be submitted to the competent court in The Hague, unless resolved amicably first.</li>
+        </ol>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" fill="none" style="height: 28px; width: auto;" aria-label="Reboc B.V.">
+                <path d="M10 108 L10 32 L58 32" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M88 70 L148 70 C148 46 132 28 120 28 C104 28 88 46 88 70 C88 94 104 112 120 112 C134 112 146 100 148 88" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <path d="M178 10 L178 112" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <path d="M178 70 C178 46 194 28 212 28 C228 28 244 46 244 70 C244 94 228 112 212 112 C196 112 178 94 178 70Z" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                <ellipse cx="302" cy="70" rx="32" ry="42" stroke="white" stroke-width="3.5" fill="none"/>
+                <rect x="368" y="8" width="70" height="104" rx="3" fill="rgba(255,255,255,0.25)"/>
+                <path d="M428 52 C422 34 412 26 403 26 C387 26 374 44 374 70 C374 96 387 114 403 114 C412 114 422 106 428 88" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
+            </svg></div>
+            <ul class="footer-links">
+                <li><a href="reboc-website.html#services">Services</a></li>
+                <li><a href="reboc-website.html#about">About</a></li>
+                <li><a href="reboc-website.html#contact">Contact</a></li>
+            </ul>
+            <p>&copy; 2026 Reboc B.V. All rights reserved.</p>
+            <div class="kvk-info">Reboc B.V. &bull; KvK: 27263706 &bull; BTW/VAT: NL8173.31.025.B01 &bull; Den Haag, Netherlands</div>
+        </div>
+    </footer>
+</body>
+</html>

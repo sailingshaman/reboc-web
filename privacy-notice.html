@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Notice | Reboc B.V.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #0a1628;
+            --blue-dark: #0f2847;
+            --blue-primary: #1a56db;
+            --blue-bright: #3b82f6;
+            --accent: #06b6d4;
+            --accent-light: #22d3ee;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray-800);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0.75rem 2rem;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span { color: #0ea5e9; }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-links a:hover { color: var(--accent-light); }
+
+        .nav-cta {
+            background: var(--blue-primary);
+            color: var(--white) !important;
+            padding: 0.6rem 1.4rem;
+            border-radius: 8px;
+            transition: background 0.2s, transform 0.2s !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--blue-bright) !important;
+            transform: translateY(-1px);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            margin: 5px 0;
+            transition: all 0.3s;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--blue-dark) 50%, #0c3466 100%);
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: var(--white);
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: var(--gray-400);
+            font-size: 1rem;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        .content h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .content h2:first-of-type { margin-top: 0; }
+
+        .content p, .content li {
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .content ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            list-style: disc;
+        }
+
+        .content li { margin-bottom: 0.4rem; }
+
+        .content a {
+            color: var(--blue-primary);
+            text-decoration: none;
+        }
+
+        .content a:hover { text-decoration: underline; }
+
+        footer {
+            background: var(--navy);
+            color: var(--gray-400);
+            padding: 3rem 2rem;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+        }
+
+        .footer-logo span { color: #0ea5e9; }
+
+        footer p { font-size: 0.85rem; }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--accent-light); }
+
+        .kvk-info {
+            font-size: 0.8rem;
+            color: var(--gray-600);
+            margin-top: 1.5rem;
+            text-align: center;
+            width: 100%;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 22, 40, 0.98);
+                flex-direction: column;
+                padding: 1.5rem 2rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active { display: flex; }
+            .mobile-toggle { display: block; }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">REBOC<span>.</span></a>
+            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Privacy Notice</h1>
+        <p>Last updated: March 2026</p>
+    </div>
+
+    <div class="content">
+        <h2>1. Who we are</h2>
+        <p>Reboc B.V. is an IT intermediary company registered in The Netherlands (KvK: 27263706), based at Goudenregenplein 61, 2565 GK Den Haag. We connect freelance IT professionals with enterprise clients and handle the related administration and invoicing.</p>
+        <p>For questions about this privacy notice or how we handle your data, you can reach us at <a href="mailto:info@reboc.nl">info@reboc.nl</a>.</p>
+
+        <h2>2. What data we collect</h2>
+        <p>We collect personal data in the following ways:</p>
+        <p><strong>Through the contact form on our website:</strong></p>
+        <ul>
+            <li>Your name</li>
+            <li>Your email address</li>
+            <li>The subject and content of your message</li>
+        </ul>
+        <p><strong>Through business interactions:</strong></p>
+        <ul>
+            <li>Name and contact details of freelancers and client representatives</li>
+            <li>Company and billing information needed for contracts and invoicing</li>
+        </ul>
+        <p>We do not use cookies, tracking pixels, or analytics tools on this website. We do not collect data automatically beyond what is technically necessary to serve the website (standard server logs processed by Cloudflare).</p>
+
+        <h2>3. Why we collect it</h2>
+        <p>We use your personal data for the following purposes:</p>
+        <ul>
+            <li>To respond to enquiries submitted through our contact form</li>
+            <li>To set up and manage contracts between freelancers and clients</li>
+            <li>To handle invoicing and administration</li>
+            <li>To meet legal and tax obligations</li>
+        </ul>
+
+        <h2>4. Legal basis</h2>
+        <p>Under the General Data Protection Regulation (GDPR), we process your data based on:</p>
+        <ul>
+            <li><strong>Legitimate interest</strong> - to respond to your contact form submissions</li>
+            <li><strong>Contract performance</strong> - to fulfil our obligations when you engage our services</li>
+            <li><strong>Legal obligation</strong> - to comply with Dutch tax and accounting requirements</li>
+        </ul>
+
+        <h2>5. Who we share data with</h2>
+        <p>We may share your personal data with:</p>
+        <ul>
+            <li>The other party in a freelancer-client engagement (limited to what is necessary for the assignment)</li>
+            <li>Our accountant, for tax and financial reporting</li>
+            <li>Formspree Inc. (USA), which processes contact form submissions on our behalf</li>
+            <li>Cloudflare Inc. (USA), which hosts our website and processes standard server logs</li>
+        </ul>
+        <p>We do not sell your data to third parties.</p>
+
+        <h2>6. International transfers</h2>
+        <p>Some of our service providers (Formspree, Cloudflare) are based in the United States. These transfers are protected by appropriate safeguards, including Standard Contractual Clauses as approved by the European Commission.</p>
+
+        <h2>7. How long we keep your data</h2>
+        <ul>
+            <li>Contact form submissions: deleted within 12 months of the last interaction, unless a business relationship is established</li>
+            <li>Contract and invoicing data: retained for 7 years after the end of the engagement, as required by Dutch tax law</li>
+        </ul>
+
+        <h2>8. Your rights</h2>
+        <p>Under the GDPR, you have the right to:</p>
+        <ul>
+            <li>Access the personal data we hold about you</li>
+            <li>Request correction of inaccurate data</li>
+            <li>Request deletion of your data (where legally permitted)</li>
+            <li>Object to or restrict the processing of your data</li>
+            <li>Request a copy of your data in a portable format</li>
+            <li>File a complaint with the Dutch Data Protection Authority (Autoriteit Persoonsgegevens) at <a href="https://autoriteitpersoonsgegevens.nl">autoriteitpersoonsgegevens.nl</a></li>
+        </ul>
+        <p>To exercise any of these rights, contact us at <a href="mailto:info@reboc.nl">info@reboc.nl</a>.</p>
+
+        <h2>9. Security</h2>
+        <p>We take reasonable measures to protect your personal data. Our website is served over HTTPS and hosted on Cloudflare's infrastructure. Access to personal data within our organisation is limited to those who need it for their work.</p>
+
+        <h2>10. Changes to this notice</h2>
+        <p>We may update this privacy notice from time to time. Changes will be published on this page. We recommend checking this page occasionally.</p>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">REBOC<span>.</span></div>
+            <ul class="footer-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+            </ul>
+            <p>&copy; 2026 Reboc B.V. All rights reserved.</p>
+            <div class="kvk-info">Reboc B.V. &bull; KvK: 27263706 &bull; BTW/VAT: NL8173.31.025.B01 &bull; Den Haag, Netherlands</div>
+        </div>
+    </footer>
+</body>
+</html>

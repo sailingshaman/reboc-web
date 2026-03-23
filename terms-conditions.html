@@ -64,18 +64,14 @@
         }
 
         .logo {
-            display: flex;
-            align-items: center;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--white);
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
-        .logo svg {
-            height: 36px;
-            width: auto;
-            transition: opacity 0.2s;
-        }
-
-        .logo:hover svg { opacity: 0.85; }
+        .logo span { color: #0ea5e9; }
 
         .nav-links {
             display: flex;
@@ -263,22 +259,14 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-inner">
-            <a href="reboc-website.html" class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" fill="none" aria-label="Reboc B.V.">
-                <path d="M10 108 L10 32 L58 32" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M88 70 L148 70 C148 46 132 28 120 28 C104 28 88 46 88 70 C88 94 104 112 120 112 C134 112 146 100 148 88" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-                <path d="M178 10 L178 112" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-                <path d="M178 70 C178 46 194 28 212 28 C228 28 244 46 244 70 C244 94 228 112 212 112 C196 112 178 94 178 70Z" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-                <ellipse cx="302" cy="70" rx="32" ry="42" stroke="white" stroke-width="3.5" fill="none"/>
-                <rect x="368" y="8" width="70" height="104" rx="3" fill="rgba(255,255,255,0.25)"/>
-                <path d="M428 52 C422 34 412 26 403 26 C387 26 374 44 374 70 C374 96 387 114 403 114 C412 114 422 106 428 88" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
-            </svg></a>
+            <a href="index.html" class="logo">REBOC<span>.</span></a>
             <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle menu">
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links">
-                <li><a href="reboc-website.html#services">Services</a></li>
-                <li><a href="reboc-website.html#about">About</a></li>
-                <li><a href="reboc-website.html#contact" class="nav-cta">Get in Touch</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Get in Touch</a></li>
             </ul>
         </div>
     </nav>
@@ -381,19 +369,12 @@
     <!-- Footer -->
     <footer>
         <div class="footer-inner">
-            <div class="footer-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 120" fill="none" style="height: 28px; width: auto;" aria-label="Reboc B.V.">
-                <path d="M10 108 L10 32 L58 32" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M88 70 L148 70 C148 46 132 28 120 28 C104 28 88 46 88 70 C88 94 104 112 120 112 C134 112 146 100 148 88" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-                <path d="M178 10 L178 112" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-                <path d="M178 70 C178 46 194 28 212 28 C228 28 244 46 244 70 C244 94 228 112 212 112 C196 112 178 94 178 70Z" stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-                <ellipse cx="302" cy="70" rx="32" ry="42" stroke="white" stroke-width="3.5" fill="none"/>
-                <rect x="368" y="8" width="70" height="104" rx="3" fill="rgba(255,255,255,0.25)"/>
-                <path d="M428 52 C422 34 412 26 403 26 C387 26 374 44 374 70 C374 96 387 114 403 114 C412 114 422 106 428 88" stroke="white" stroke-width="4" fill="none" stroke-linecap="round"/>
-            </svg></div>
+            <div class="footer-logo" style="font-size:1.5rem; font-weight:800; color:white;">REBOC<span style="color:#0ea5e9">.</span></div>
             <ul class="footer-links">
-                <li><a href="reboc-website.html#services">Services</a></li>
-                <li><a href="reboc-website.html#about">About</a></li>
-                <li><a href="reboc-website.html#contact">Contact</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="privacy-notice.html">Privacy Notice</a></li>
             </ul>
             <p>&copy; 2026 Reboc B.V. All rights reserved.</p>
             <div class="kvk-info">Reboc B.V. &bull; KvK: 27263706 &bull; BTW/VAT: NL8173.31.025.B01 &bull; Den Haag, Netherlands</div>

@@ -1,0 +1,5 @@
+# Reboc B.V. - https://reboc.nl
+User-agent: *
+Allow: /
+
+Sitemap: https://reboc.nl/sitemap.xml

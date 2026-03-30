@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Rights Policy | Reboc B.V.</title>
+    <meta name="description" content="Reboc B.V. Human Rights Policy. Our commitment to respecting human rights, fair labour practices, ethical conduct, and responsible business operations.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://reboc.nl/human-rights-policy.html">
+    <meta name="theme-color" content="#0a1628">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #0a1628;
+            --blue-dark: #0f2847;
+            --blue-primary: #1a56db;
+            --blue-bright: #3b82f6;
+            --accent: #06b6d4;
+            --accent-light: #22d3ee;
+            --white: #ffffff;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-400: #94a3b8;
+            --gray-500: #64748b;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-800: #1e293b;
+            --gray-900: #0f172a;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--gray-800);
+            background: var(--white);
+            line-height: 1.6;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 0.75rem 2rem;
+            background: rgba(10, 22, 40, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--white);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span { color: #0ea5e9; }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            letter-spacing: 0.3px;
+        }
+
+        .nav-links a:hover { color: var(--accent-light); }
+
+        .nav-cta {
+            background: var(--blue-primary);
+            color: var(--white) !important;
+            padding: 0.6rem 1.4rem;
+            border-radius: 8px;
+            transition: background 0.2s, transform 0.2s !important;
+        }
+
+        .nav-cta:hover {
+            background: var(--blue-bright) !important;
+            transform: translateY(-1px);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-toggle span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--white);
+            margin: 5px 0;
+            transition: all 0.3s;
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--blue-dark) 50%, #0c3466 100%);
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            font-weight: 800;
+            color: var(--white);
+            letter-spacing: -1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            color: var(--gray-400);
+            font-size: 1rem;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+        }
+
+        .content h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-top: 2.5rem;
+            margin-bottom: 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .content h2:first-of-type { margin-top: 0; }
+
+        .content p, .content li {
+            font-size: 0.95rem;
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 0.5rem;
+        }
+
+        .content ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            list-style: disc;
+        }
+
+        .content li { margin-bottom: 0.4rem; }
+
+        .content a {
+            color: var(--blue-primary);
+            text-decoration: none;
+        }
+
+        .content a:hover { text-decoration: underline; }
+
+        footer {
+            background: var(--navy);
+            color: var(--gray-400);
+            padding: 3rem 2rem;
+        }
+
+        .footer-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+        }
+
+        .footer-logo span { color: #0ea5e9; }
+
+        footer p { font-size: 0.85rem; }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--gray-400);
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: var(--accent-light); }
+
+        .kvk-info {
+            font-size: 0.8rem;
+            color: var(--gray-600);
+            margin-top: 1.5rem;
+            text-align: center;
+            width: 100%;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 22, 40, 0.98);
+                flex-direction: column;
+                padding: 1.5rem 2rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active { display: flex; }
+            .mobile-toggle { display: block; }
+
+            .footer-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="index.html" class="logo">REBOC<span>.</span></a>
+            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact" class="nav-cta">Get in Touch</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <h1>Human Rights Policy</h1>
+        <p>Last updated: March 2026</p>
+    </div>
+
+    <div class="content">
+        <h2>1. Introduction and commitment</h2>
+        <p>Reboc B.V. is committed to respecting and upholding internationally recognised human rights in all aspects of our business. As an IT staffing intermediary connecting freelance professionals with enterprise clients, we recognise that our operations directly impact the people we work with and the communities in which we operate.</p>
+        <p>This policy applies to all Reboc B.V. employees, directors, contractors, freelance professionals engaged through our services, and business partners. It is informed by the United Nations Guiding Principles on Business and Human Rights, the International Labour Organization (ILO) Declaration on Fundamental Principles and Rights at Work, the Universal Declaration of Human Rights, the International Covenant on Civil and Political Rights (ICCPR), the International Covenant on Economic, Social and Cultural Rights (ICESCR), and the OECD Guidelines for Multinational Enterprises.</p>
+
+        <h2>2. Freely chosen employment</h2>
+        <p>All work arranged through Reboc B.V. must be voluntary. We do not engage in or tolerate any form of forced, bonded, indentured, or involuntary labour, nor any form of human trafficking. Workers are free to leave their engagement after reasonable notice as specified in their contract. We never require workers to surrender government-issued identification, passports, or work permits as a condition of employment.</p>
+
+        <h2>3. Child labour and young workers</h2>
+        <p>Reboc B.V. does not engage child labour. We do not employ or engage anyone below the minimum legal working age as defined by applicable local law or under the age of 15, whichever is higher. Where young workers (under 18) are legally permitted to work, we ensure that they are not exposed to hazardous conditions, excessive working hours, or any situation that could harm their health, safety, or development.</p>
+
+        <h2>4. Non-discrimination and equal opportunity</h2>
+        <p>We are committed to providing equal opportunity and prohibiting discrimination. Decisions regarding hiring, placement, compensation, training, and termination are based solely on professional qualifications, skills, and performance. We do not discriminate on the basis of race, colour, age, gender, sexual orientation, gender identity, ethnicity, national origin, disability, pregnancy, religion, political affiliation, union membership, veteran status, marital status, or any other characteristic protected by applicable law.</p>
+        <p>We do not tolerate harassment, intimidation, or any form of hostile treatment in our workplace or in any engagements facilitated through our services.</p>
+
+        <h2>5. Fair wages and benefits</h2>
+        <p>Reboc B.V. ensures that all compensation meets or exceeds the minimum legal requirements of the applicable jurisdiction. We are committed to transparent and timely payment practices and do not make deductions from wages as a disciplinary measure. All freelancers and employees receive clear and understandable documentation of the terms and conditions of their compensation before work begins.</p>
+
+        <h2>6. Working hours</h2>
+        <p>Working hours arranged through Reboc B.V. comply with applicable laws and industry standards. We do not require working hours that exceed the limits set by local law or exceed 60 hours per week including overtime, except in extraordinary circumstances where both parties agree. Workers are entitled to at least one day off per seven-day period. Overtime is voluntary and compensated in accordance with applicable law.</p>
+
+        <h2>7. Freedom of association</h2>
+        <p>We respect the right of all workers to form and join trade unions, to bargain collectively, and to engage in peaceful assembly, in accordance with local laws. Equally, we respect the right of workers to refrain from such activities. We do not discriminate against or retaliate against any worker for exercising these rights.</p>
+
+        <h2>8. Health and safety</h2>
+        <p>The health and safety of everyone involved in our operations is a priority. While Reboc B.V. primarily facilitates IT staffing and project services (which are largely office-based or remote), we are committed to ensuring that all work environments meet applicable health and safety standards. We encourage our clients to maintain safe working conditions and expect that our freelancers are provided with a safe and healthy workplace.</p>
+
+        <h2>9. Environmental responsibility</h2>
+        <p>Reboc B.V. is committed to minimising the environmental impact of our operations. We prohibit causing harmful soil change, water pollution, air pollution, harmful noise emissions, or excessive water consumption in our activities. As an IT services company, our direct environmental footprint is limited, but we are mindful of our responsibility to operate sustainably and expect the same of our business partners.</p>
+
+        <h2>10. Land rights and unlawful eviction</h2>
+        <p>Reboc B.V. does not engage in or support the unlawful eviction or unauthorised appropriation of land, forests, or water. We respect the property rights and land tenure of individuals and communities, and we expect our business partners to do the same.</p>
+
+        <h2>11. Use of security forces</h2>
+        <p>Reboc B.V. does not hire or use private or public security forces in a manner that may cause interference with human rights due to lack of instruction or control. In the event that security services are ever required, we ensure proper instruction, oversight, and accountability to prevent any adverse human rights impacts.</p>
+
+        <h2>12. International environmental conventions</h2>
+        <p>Reboc B.V. supports and complies with the following international environmental agreements in so far as they are applicable to our operations:</p>
+        <ul>
+            <li>The Minamata Convention on Mercury — we do not use, produce, or improperly dispose of mercury or mercury-containing products in our operations.</li>
+            <li>The Stockholm Convention on Persistent Organic Pollutants (POPs) — we do not produce or utilise persistent organic pollutants and support the elimination of these substances.</li>
+            <li>The Basel Convention on Hazardous Waste — we ensure that any waste generated by our operations, including electronic waste, is handled, transported, and disposed of in compliance with applicable regulations and in a manner that safeguards human health and the environment.</li>
+        </ul>
+
+        <h2>13. Protection of legally established rights and positions</h2>
+        <p>Reboc B.V. respects and upholds the legally established rights and positions of all individuals affected by our operations. We do not engage in any activity that would undermine or circumvent the legal protections afforded to workers, communities, or other stakeholders under applicable law.</p>
+
+        <h2>14. Commitment to vulnerable and at-risk groups</h2>
+        <p>Reboc B.V. recognises that certain groups and populations require particular attention to ensure their human rights are respected and protected. Our policy explicitly supports the principles of the following international instruments:</p>
+        <ul>
+            <li><strong>Convention on the Elimination of All Forms of Discrimination Against Women (CEDAW)</strong> — We are committed to gender equality and the elimination of discrimination against women in all aspects of employment and business engagement.</li>
+            <li><strong>Convention on the Rights of the Child</strong> — We uphold children's rights and strictly prohibit child labour, as detailed in Section 3 of this policy.</li>
+            <li><strong>International Convention on the Protection of the Rights of All Migrant Workers and Members of Their Families</strong> — We respect the rights of migrant workers and ensure that all professionals engaged through our services, regardless of nationality, receive equal treatment, fair compensation, and dignified working conditions.</li>
+            <li><strong>UN Declaration on the Human Rights of People of African Descent</strong> — We support the principles of equality, non-discrimination, and inclusion for people of African descent.</li>
+            <li><strong>UN Declaration on the Rights of Indigenous Peoples (UNDRIP)</strong> — We respect the rights of indigenous peoples, including their rights to self-determination, land, and cultural identity.</li>
+            <li><strong>Rights of Roma, Sinti, and Travellers</strong> — We are committed to combating discrimination against Roma, Sinti, and Traveller communities and ensuring equal opportunities in employment.</li>
+            <li><strong>Rights of national, ethnic, religious, and linguistic minorities</strong> — We uphold the rights of all persons belonging to minority groups and ensure they are treated with dignity and without discrimination in our operations.</li>
+            <li><strong>Rights of refugees, asylum-seekers, and internally displaced people</strong> — We respect the rights and dignity of refugees and displaced persons, and do not discriminate against individuals based on their migration or asylum status.</li>
+            <li><strong>UN Guiding Principles on Extreme Poverty and Human Rights</strong> — We support the principle that persons living in poverty must not be denied their human rights and that business activities should not contribute to or perpetuate conditions of extreme poverty.</li>
+        </ul>
+
+        <h2>15. Anti-corruption and ethical conduct</h2>
+        <p>Reboc B.V. conducts all business with integrity and in compliance with applicable anti-corruption and anti-bribery laws, including the Dutch Criminal Code provisions on bribery and corruption. We do not offer, promise, give, or accept bribes or other improper payments, whether directly or through third parties. We maintain accurate and transparent records of all business transactions.</p>
+
+        <h2>16. Data privacy and protection</h2>
+        <p>We respect the privacy rights of all individuals. Personal data is collected, processed, and stored in accordance with the General Data Protection Regulation (GDPR) and applicable Dutch law. Our full privacy practices are detailed in our <a href="privacy-notice.html">Privacy Notice</a>.</p>
+
+        <h2>17. Supply chain responsibility</h2>
+        <p>We expect our business partners, subcontractors, and clients to uphold the same human rights standards set out in this policy. When entering into new business relationships, we assess the human rights practices of our partners and address any concerns that arise. We encourage transparency and open dialogue on human rights issues throughout our business relationships.</p>
+
+        <h2>18. Due diligence and risk assessment</h2>
+        <p>Reboc B.V. conducts ongoing due diligence to identify, prevent, and mitigate adverse human rights impacts connected to our business activities. This includes periodic assessment of our operations and business relationships, monitoring compliance with this policy, and taking corrective action where issues are identified.</p>
+
+        <h2>19. Grievance mechanism and reporting</h2>
+        <p>We provide accessible channels for anyone to raise concerns about human rights issues related to our business, without fear of retaliation. Concerns can be reported to:</p>
+        <ul>
+            <li>Email: <a href="mailto:info@reboc.nl">info@reboc.nl</a></li>
+            <li>Phone: <a href="tel:+31705690259">+31 (0)70 569 0259</a></li>
+            <li>Post: Reboc B.V., Goudenregenplein 61, 2565 GK Den Haag, Netherlands</li>
+        </ul>
+        <p>All reports are treated confidentially and investigated promptly. We do not tolerate retaliation against anyone who raises a concern in good faith.</p>
+
+        <h2>20. Training and awareness</h2>
+        <p>We ensure that our team members are aware of this policy and understand their responsibilities regarding human rights. We provide appropriate guidance and support to ensure these standards are upheld across all our operations and business relationships.</p>
+
+        <h2>21. Review and continuous improvement</h2>
+        <p>This policy is reviewed at least annually and updated as necessary to reflect changes in our business, applicable law, and best practices. We are committed to continuous improvement in our human rights performance and welcome feedback from all stakeholders.</p>
+
+        <h2>22. Governance</h2>
+        <p>Ultimate responsibility for this policy rests with the management of Reboc B.V. The management team is accountable for ensuring this policy is implemented effectively and that any human rights concerns are addressed promptly and appropriately.</p>
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-logo">REBOC<span>.</span></div>
+            <ul class="footer-links">
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                <li><a href="privacy-notice.html">Privacy Notice</a></li>
+            </ul>
+            <p>&copy; 2026 Reboc B.V. All rights reserved.</p>
+            <div class="kvk-info">Reboc B.V. &bull; KvK/Chamber of Commerce: 27263706 &bull; BTW/VAT: NL817331025B01 &bull; Den Haag, Netherlands</div>
+        </div>
+    </footer>
+</body>
+</html>

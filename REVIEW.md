@@ -134,6 +134,8 @@ My suggestion is to keep the sections but scope each one explicitly, for example
 
 ## 7. Proposed page structure and draft copy
 
+> **Superseded on 7 November.** The copy below was the first draft and was published, then cut twice: once for length, once to remove assertions Reboc cannot evidence per assignment. Sentences here describing what the specialist or the client does are **no longer on the site**. See "Reductions after publication" at the end of this document for what the page says now.
+
 Structure changes to index.html: keep the existing sections, rewrite three of them, and split "Why Reboc" into two audience blocks.
 
 ```
@@ -349,3 +351,54 @@ Both regenerated and now free of the contradicting wording.
 3. **Check whether any signed agreement cites Terms article 3.2 or 3.3 by number.**
 4. **Decide on resupplying the PDFs to Dell.**
 5. The homepage still carries the generic visual design. The three alternatives from the earlier design review are parked on branch `claude/reboc-unique-design-d4fcff`.
+
+---
+
+# Reductions after publication
+
+The copy in section 7 went live on 7 November and was then reduced twice the same day, after Reinier raised two objections: the explanations were too detailed, and detail of that kind can be used against him.
+
+## The test applied
+
+Not "is this too long" but: **can Reboc evidence this today, for every assignment?** Statements about the contracting structure follow from documents Reboc holds. Statements about how the specialist or the client behaves do not, and the compliance application that would evidence them does not exist yet. A website that describes the intended practice sets a public benchmark that Reboc can be measured against under the Deliveroo factors.
+
+One of the published sentences, "deliverables and acceptance criteria agreed before the assignment begins", was directly contradicted by Reboc's own document review, which found expired statements of work and a generic template used on unrelated work.
+
+## Removed from the site
+
+| Claim | Why |
+| --- | --- |
+| "The specialist decides how, when and with which means the work is done" | Describes the specialist's conduct |
+| "The client's project manager accepts the work against the agreed criteria" | Describes the client's conduct |
+| "Deliverables and acceptance criteria agreed before the assignment begins" | Contradicted by the document review |
+| "Own company, own insurance, own equipment, other clients" as a statement about specialists | Asserts facts about third parties that Reboc does not verify. The same points remain on the specialist side, where they are stated as what Reboc expects |
+| "Each assignment has its own Statement of Work" and "it is stated in every Statement of Work" | Universal claims about documents and their contents |
+| "with acceptance by the client" in the meta description, Open Graph, Twitter and JSON-LD | The same claim, left in the head after the visible copy was cut. More exposed than body copy, since the meta description appears in search results and JSON-LD is machine readable |
+
+Process reduced from five steps to three, all describing Reboc's own acts. Audience cards reduced from eight to six. The About stat tiles removed, with the SBI codes dropped from the page. Homepage copy from 737 words to 469.
+
+## What the site now asserts
+
+Every remaining statement follows from Reboc's own contracts or describes Reboc's own conduct:
+
+- Reboc is a subcontractor, delivering through independent specialists who each work through their own company
+- Reboc contracts the specialist's company and the client separately and is a party to both
+- Reboc invoices the client and pays the specialist once the client has paid
+- Reboc does not direct how the work is done, and does not supply people to work under the client's direction
+- What Reboc expects of a specialist, stated as a requirement rather than as fact
+- "We describe how we contract; we do not give legal assurances"
+
+## Privacy notice trimmed on the same principle
+
+The version published on 7 November listed work logs, acceptance and return records, periodic check-in answers, and an intake file of other clients, own equipment and certifications. Those belong to the compliance application, which is not live. Listing data Reboc does not yet process is the same error as naming a processor before it is used, which this review refused to do for Hetzner, and it would invite a request for records that do not exist.
+
+Section 2 now lists only contact details, professional information, company and billing information, records of hours and invoiced work, and Chamber of Commerce and insurance details. The matching purpose, legal basis and retention lines were removed with them.
+
+**Confirm this against what `reboc-adminster` actually holds.** I trimmed to what the system plausibly stores today, but only you can confirm it. Under-describing processing is a transparency failure under the GDPR, so this needs to be right in both directions. Add the removed categories back when the compliance application goes live, together with Hetzner as a processor.
+
+## Still open after these reductions
+
+1. The three service areas remain my proposal, not your confirmation.
+2. Terms article 3.2 still states that scope is set out in a Statement of Work and that work is accepted by the Customer's project manager. I recommend keeping it: a contract should define the mechanism, and without it there is no contractual basis for "services, not people". But it is the same sentence pattern that was cut from the website, so your lawyer should confirm it.
+3. Legal review of all three legal pages and both PDFs.
+4. Whether to resupply the regenerated PDFs to Dell.

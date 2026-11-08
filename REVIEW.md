@@ -402,3 +402,59 @@ Section 2 now lists only contact details, professional information, company and 
 2. Terms article 3.2 still states that scope is set out in a Statement of Work and that work is accepted by the Customer's project manager. I recommend keeping it: a contract should define the mechanism, and without it there is no contractual basis for "services, not people". But it is the same sentence pattern that was cut from the website, so your lawyer should confirm it.
 3. Legal review of all three legal pages and both PDFs.
 4. Whether to resupply the regenerated PDFs to Dell.
+
+# Second review round, 8 November 2026
+
+A separate review of the live site and of Terms v2.1 was carried out against Reboc's actual agreements, including the Broadcom work authorisations and the concept SOWs. It raised points this review had not reached, because it had access to the contracts and this one did not. Its findings and the resulting changes are recorded here.
+
+## The contract chain, not the website
+
+Broadcom's work authorisations in force are time-and-materials with weekly timesheet approval and state: "The work performed during this engagement is managed and driven by the Customer."
+
+Direction and supervision is the test under the Waadi. A signed document in which the end client states that it manages and drives the work contradicts Reboc's position more directly than anything that was ever on the website, and it is upstream of everything this review could change.
+
+Note for the lawyer: **Terms article 3.3 and that sentence cannot both be true.** Article 3.3 states that Reboc does not supply personnel to work under the direction and supervision of a third party. The remedy is not to weaken article 3.3, which would remove the contractual basis for the position, but to change the work authorisations. Reboc is working with Broadcom on a new template, and on an addendum for the work authorisations already in force. The WAs in force run until October 2027 at the latest.
+
+## Absolute claims softened, 8 November 2026
+
+Because the WAs in force run for another eleven months, the site should not assert as fact what Reboc's own signed paperwork contradicts. Four statements were changed from claims about every engagement into statements about what Reboc contracts for.
+
+| Was | Now |
+| --- | --- |
+| `<h1>` "Defined results, delivered by senior IT specialists" | "Enterprise IT delivery, through senior independent specialists" |
+| Hero: "...each working through their own company, against agreed deliverables." | "...each working through their own company." |
+| "Reboc contracts to deliver the agreed services. It does not supply people to work under your direction." | "Reboc contracts to deliver the agreed services, not to supply people to work under your direction." |
+| About heading: "A Subcontractor Delivering Defined Results" | "A Subcontractor Delivering IT Services" |
+
+The second review had flagged only the last two. The `<h1>` and the hero sentence carried the same claim more prominently and were found in implementation.
+
+## Terms version archive, 8 November 2026
+
+Agreements incorporate "the general terms" without naming a version, and the terms page is overwritten in place when a new version is published. Until today there was no way to show which text applied to a specialist at a given moment. Version 2.0 was already unreachable.
+
+Each published version is now generated as a PDF from the git commit that published it, by `docs-source/build-terms-archive.py`, and listed on the terms page under "Earlier versions". The block sits outside `<div class="content">` so that it does not appear inside the archived PDF of the current version.
+
+Filenames are flat at the site root (`Reboc_BV_Terms_Conditions_v2.0.pdf`) rather than under a `terms-conditions/` path, because the site redirects `/terms-conditions.html` to `/terms-conditions` and a directory of that name would collide with the redirect.
+
+This is not a change to any legal text. It publishes text that was already published.
+
+## Privacy notice restored, 8 November 2026
+
+Since 8 November 2026 Reboc processes check-in answers and intake documents through a specialist portal, and keeps signed documents and records of delivered work in its compliance system. The trim recorded above was correct on 7 November and wrong on 8 November, because the facts changed. Section 2 now lists the intake file, check-in answers, and signed documents and work records, with their purpose, legal basis and retention.
+
+Two drafting choices for the lawyer to confirm:
+
+1. The processing is grounded on **legitimate interest alone**, not on legitimate interest and legal obligation together. Stacking two bases for one operation reads as uncertainty about the ground relied on, and the existing legal-obligation entry already carries the fiscal side.
+2. Retention is tied to "the administration we are required to keep under Dutch tax law" rather than asserting a seven-year period in the abstract.
+
+Section 5 now lists Hetzner Online GmbH (Germany, the portal at portal.reboc.nl), Proton AG (Switzerland, portal and check-in mail), and states that the portal does not run through Cloudflare. Section 6 records that Switzerland holds an adequacy decision and that the portal is hosted inside the EU. The compliance system runs on Reboc's own server, so no processor is named for it.
+
+The "other clients" category is narrowed to "evidence that the specialist works for other clients (client name and date)", matching what the portal asks for: an invoice or contract with amounts, contact persons and the description of the work blacked out.
+
+## Open after this round
+
+1. **Terms v2.2.** "Client" means the specialist in the Terms and the customer on the website. The proposal is to adopt the website's words throughout the Terms: Opdrachtnemer becomes "Specialist", Opdrachtgever becomes "Client". This is a find-and-replace across articles 2, 3, 6, 7, 9 and 10, which is exactly where a mechanical substitution can change the meaning of an indemnity or a payment clause. It waits for the lawyer and should be done in the same pass as the review of v2.1, not ahead of it.
+2. The Broadcom template change and the addendum for the WAs in force.
+3. The three service areas remain unconfirmed.
+4. Legal review of all three legal pages and all four PDFs.
+5. Whether to resupply the regenerated policy PDFs to Dell.

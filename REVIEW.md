@@ -458,3 +458,37 @@ The "other clients" category is narrowed to "evidence that the specialist works 
 3. The three service areas remain unconfirmed.
 4. Legal review of all three legal pages and all four PDFs.
 5. Whether to resupply the regenerated policy PDFs to Dell.
+
+# Terms version 2.2, 9 November 2026
+
+## What changed
+
+Article 9 had no cap on direct damages. It excluded indirect, consequential, reputational and financial loss, but left Reboc's direct liability open. For a company whose position rests on being responsible to the client for delivery (article 3.1), an uncapped direct liability is the wrong way round: Reboc carries the delivery risk and had no ceiling on it.
+
+Two clauses were added, and the existing three kept their order:
+
+- **9.1** Reboc's total liability to a Customer under or in connection with an engagement is limited to the fees paid to Reboc by that Customer under the Statement of Work to which the claim relates.
+- **9.5** The limitations of liability in this article do not apply in the event of intent or deliberate recklessness on the part of Reboc.
+
+9.5 is there because a limitation that purports to cover intent or deliberate recklessness is liable to be set aside under Dutch law, which can take the rest of the clause with it. Writing the carve-out in is what makes the cap more likely to hold.
+
+This published as version 2.2 rather than being edited into 2.1. Now that each version is archived as a PDF and agreements name the version they rely on, changing the text behind a version number would defeat the archive built on 8 November.
+
+## The caveat that matters most
+
+**Article 1.3 says a separate written agreement prevails over these Terms.** Where a client contracts on its own paper, as Broadcom does through its VSA, these general terms do not govern and this cap does not apply. The protection is real for clients who accept Reboc's terms, and absent exactly where the largest exposure sits. The cap is not a substitute for a limitation of liability in the client-side agreements themselves.
+
+## Questions for the lawyer
+
+1. **Measure of the cap.** It is currently the fees paid under the relevant Statement of Work, with no time limit. One assignment has run 44 months, so that total can be large. The common alternative is the fees paid in the twelve months before the event giving rise to the claim. Which is appropriate here?
+2. **Where the cap belongs.** Should it sit in the general terms at all, or in each dienstverleningsovereenkomst and Statement of Work, where it is harder to displace in a battle of forms?
+3. **"Financial loss" in 9.2.** Nearly all damages are financial, so as drafted the exclusion may swallow the clause. It risks being read against Reboc as the drafter, or set aside as unreasonably onerous. This wording predates this review and has not been changed.
+4. **The carve-out in 9.5.** Is "intent or deliberate recklessness on the part of Reboc" sufficient, or should it extend to managerial subordinates?
+5. **No cap towards specialists.** The cap runs to Customers only, deliberately, since Reboc receives no fees from a specialist. Confirm that leaving Reboc's liability to specialists uncapped is intended.
+6. **Consistency with article 3.1.** Reboc holds itself out as responsible for delivery. A cap at the SOW fees is normal in subcontracting, but confirm it does not undercut the position the rest of the Terms establish.
+
+## Consequences to pick up elsewhere
+
+- The concept dienstverleningsovereenkomsten name **version 2.1**. Any that are not yet signed should name 2.2 instead. Signed agreements are unaffected: the version they named is in the archive.
+- Version 2.2 is now spent on this change, so the Client/Specialist renaming becomes **version 2.3**.
+- `docs-source/build-terms-archive.py` is append-only. A PDF that already exists is left exactly as written rather than rebuilt with a new timestamp, so a published record cannot be altered by running the build. Pass `--force` only to repair a broken file.

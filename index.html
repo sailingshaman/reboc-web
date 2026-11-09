@@ -51,7 +51,9 @@
         "serviceType": [
             "VMware Cloud Foundation platform delivery",
             "Enterprise cloud and virtualisation migration",
-            "Project leadership for infrastructure programmes"
+            "Project and programme leadership",
+            "Application development",
+            "Business intelligence and reporting"
         ]
     }
     </script>
@@ -444,13 +446,16 @@
         }
 
         .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 1.5rem;
             margin-top: 3.5rem;
         }
 
         .service-card {
+            flex: 1 1 300px;
+            max-width: 384px;
             background: var(--white);
             border-radius: 16px;
             padding: 2.5rem 2rem;
@@ -998,8 +1003,8 @@
     <section class="services" id="services">
         <div class="section-inner">
             <span class="section-label">What We Deliver</span>
-            <h2 class="section-title">Enterprise Infrastructure Assignments</h2>
-            <p class="section-subtitle">The three areas in which Reboc delivers assignments.</p>
+            <h2 class="section-title">Enterprise IT Assignments</h2>
+            <p class="section-subtitle">The areas in which Reboc delivers assignments.</p>
             <div class="services-grid">
                 <div class="service-card fade-up">
                     <div class="service-icon">
@@ -1019,8 +1024,22 @@
                     <div class="service-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
                     </div>
-                    <h3>Project Leadership for Infrastructure Programmes</h3>
-                    <p>Delivery leadership on complex infrastructure programmes, agile or traditional.</p>
+                    <h3>Project and Programme Leadership</h3>
+                    <p>Delivery leadership on complex programmes, agile or traditional.</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                    </div>
+                    <h3>Application Development</h3>
+                    <p>Software development delivered as part of enterprise projects and programmes.</p>
+                </div>
+                <div class="service-card fade-up">
+                    <div class="service-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--blue-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                    </div>
+                    <h3>Business Intelligence and Reporting</h3>
+                    <p>Reporting and dashboard delivery, including Power BI.</p>
                 </div>
             </div>
         </div>

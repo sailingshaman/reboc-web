@@ -492,3 +492,13 @@ This published as version 2.2 rather than being edited into 2.1. Now that each v
 - The concept dienstverleningsovereenkomsten name **version 2.1**. Any that are not yet signed should name 2.2 instead. Signed agreements are unaffected: the version they named is in the archive.
 - Version 2.2 is now spent on this change, so the Client/Specialist renaming becomes **version 2.3**.
 - `docs-source/build-terms-archive.py` is append-only. A PDF that already exists is left exactly as written rather than rebuilt with a new timestamp, so a published record cannot be altered by running the build. Pass `--force` only to repair a broken file.
+
+## The Broadcom ask, three items
+
+Prepared in the compliance thread so there is one version of it. Recorded here because the lawyer should see all three together.
+
+1. **The work authorisation template.** Remove or replace "The work performed during this engagement is managed and driven by the Customer." This is the priority item and the only one that is a compliance problem rather than a commercial preference.
+2. **An addendum for the work authorisations already in force**, applying the corrected wording to them. This is the only instrument that reaches the period a back-assessment would examine. The WAs in force run until October 2027.
+3. **A limitation of liability in the VSA.** The VSA caps nothing, and article 1.3 of Reboc's own terms gives the VSA priority, so the cap published in Terms v2.2 does not apply on this chain. The ask is a mutual limitation on the standard pattern: neither party liable for indirect or consequential loss, and each party's total liability under a work authorisation capped at the fees payable under that work authorisation, with the usual carve-outs for confidentiality, intellectual property infringement, and wilful misconduct or gross negligence.
+
+**Sequencing note.** Items 1 and 2 are characterisation. Item 3 is commercial. Mixing them has a cost: a request to correct template wording is small and tends to be handled by contract administration, while a request to renegotiate liability goes to legal and attracts scrutiny. There is also a presentational risk, in that asking to be recognised as a subcontractor responsible for delivery while simultaneously asking to cap that responsibility can be read as wanting the label without the risk. Item 3 should therefore be put as a standard commercial term, explicitly separate from items 1 and 2, and items 1 and 2 should not be made to wait for it.

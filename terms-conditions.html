@@ -7,321 +7,34 @@
     <meta name="description" content="Terms and conditions for Reboc B.V. Covering the delivery of IT services through independent specialists, acceptance, payment, intellectual property and liability.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://reboc.nl/terms-conditions.html">
-    <meta name="theme-color" content="#0a1628">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --navy: #0a1628;
-            --blue-dark: #0f2847;
-            --blue-primary: #1a56db;
-            --blue-bright: #3b82f6;
-            --accent: #06b6d4;
-            --accent-light: #22d3ee;
-            --white: #ffffff;
-            --gray-50: #f8fafc;
-            --gray-100: #f1f5f9;
-            --gray-200: #e2e8f0;
-            --gray-300: #cbd5e1;
-            --gray-400: #94a3b8;
-            --gray-500: #64748b;
-            --gray-600: #475569;
-            --gray-700: #334155;
-            --gray-800: #1e293b;
-            --gray-900: #0f172a;
-        }
-
-        html { scroll-behavior: smooth; }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            color: var(--gray-800);
-            background: var(--white);
-            line-height: 1.6;
-        }
-
-        /* ===== NAV ===== */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            padding: 0.75rem 2rem;
-            background: rgba(10, 22, 40, 0.95);
-            backdrop-filter: blur(20px);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-        }
-
-        .nav-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--white);
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-
-        .logo span { color: #0ea5e9; }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-            letter-spacing: 0.3px;
-        }
-
-        .nav-links a:hover { color: var(--accent-light); }
-
-        .nav-cta {
-            background: var(--blue-primary);
-            color: var(--white) !important;
-            padding: 0.6rem 1.4rem;
-            border-radius: 8px;
-            transition: background 0.2s, transform 0.2s !important;
-        }
-
-        .nav-cta:hover {
-            background: var(--blue-bright) !important;
-            transform: translateY(-1px);
-        }
-
-        .mobile-toggle {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0.5rem;
-        }
-
-        .mobile-toggle span {
-            display: block;
-            width: 24px;
-            height: 2px;
-            background: var(--white);
-            margin: 5px 0;
-            transition: all 0.3s;
-        }
-
-        /* ===== HEADER ===== */
-        .page-header {
-            background: linear-gradient(135deg, var(--navy) 0%, var(--blue-dark) 50%, #0c3466 100%);
-            padding: 8rem 2rem 4rem;
-            text-align: center;
-        }
-
-        .page-header h1 {
-            font-size: clamp(2rem, 4vw, 2.8rem);
-            font-weight: 800;
-            color: var(--white);
-            letter-spacing: -1px;
-            margin-bottom: 0.5rem;
-        }
-
-        .page-header p {
-            color: var(--gray-400);
-            font-size: 1rem;
-        }
-
-        /* ===== CONTENT ===== */
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 4rem 2rem 6rem;
-        }
-
-        .versions {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 2rem 5rem;
-        }
-
-        .versions h2 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-bottom: 0.75rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--gray-200);
-        }
-
-        .versions p, .versions li {
-            color: var(--gray-600);
-            line-height: 1.8;
-            margin-bottom: 0.5rem;
-        }
-
-        .versions ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .versions a {
-            color: var(--blue-primary);
-            font-weight: 600;
-        }
-
-        .content h2 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--gray-900);
-            margin-top: 2.5rem;
-            margin-bottom: 0.75rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid var(--gray-200);
-        }
-
-        .content h2:first-of-type {
-            margin-top: 0;
-        }
-
-        .content p, .content li {
-            font-size: 0.95rem;
-            color: var(--gray-600);
-            line-height: 1.8;
-            margin-bottom: 0.5rem;
-        }
-
-        .content ol {
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .content ul {
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-            list-style: disc;
-        }
-
-        .content li {
-            margin-bottom: 0.4rem;
-        }
-
-        /* ===== FOOTER ===== */
-        footer {
-            background: var(--navy);
-            color: var(--gray-400);
-            padding: 3rem 2rem;
-        }
-
-        .footer-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .footer-logo {
-            display: flex;
-            align-items: center;
-        }
-
-        footer p { font-size: 0.85rem; }
-
-        .footer-links {
-            display: flex;
-            gap: 1.5rem;
-            list-style: none;
-        }
-
-        .footer-links .current {
-            color: var(--white);
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .footer-links a {
-            color: var(--gray-400);
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: color 0.2s;
-        }
-
-        .footer-links a:hover { color: var(--accent-light); }
-
-        .kvk-info {
-            font-size: 0.8rem;
-            color: var(--gray-600);
-            margin-top: 1.5rem;
-            text-align: center;
-            width: 100%;
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: rgba(10, 22, 40, 0.98);
-                flex-direction: column;
-                padding: 1.5rem 2rem;
-                gap: 1rem;
-            }
-
-            .nav-links.active { display: flex; }
-            .mobile-toggle { display: block; }
-
-            .footer-inner {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#d9ebf4" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#090505" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="site.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-inner">
-            <a href="index.html" class="logo">REBOC<span>.</span></a>
-            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-links">
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#how-it-works">How It Works</a></li>
-                <li><a href="index.html#why-reboc">Clients &amp; Specialists</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#contact" class="nav-cta">Get in Touch</a></li>
-            </ul>
+    <div class="top"><div class="page">
+        <header class="mast">
+            <div>
+                <a class="word" href="index.html" aria-label="Reboc, home">REBOC</a>
+                <span class="flags" role="img" aria-label="Reboc, spelled in international maritime signal flags">
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20" fill="#c8102e"/><rect x="8" width="4" height="20" fill="#f2c100"/><rect y="8" width="20" height="4" fill="#f2c100"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="10" fill="#0b3d91"/><rect y="10" width="20" height="10" fill="#c8102e"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><polygon points="0,0 20,0 13,10 20,20 0,20" fill="#c8102e"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><polygon points="0,0 20,0 20,20" fill="#c8102e"/><polygon points="0,0 20,20 0,20" fill="#f2c100"/></svg>
+                    <svg viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20" fill="#0b3d91"/><rect y="4" width="20" height="12" fill="#ffffff"/><rect y="8" width="20" height="4" fill="#c8102e"/></svg>
+                </span>
+            </div>
+            <p class="fix">52&deg;04&prime;N 004&deg;16&prime;E<br>Den Haag, delivering since 2004</p>
+        </header>
+        <div class="scale" aria-hidden="true"></div>
+        <div class="page-header">
+            <h1>Terms & Conditions</h1>
+            <p>Version 2.2, 9 November 2026</p>
         </div>
-    </nav>
+    </div></div>
 
-    <!-- Header -->
-    <div class="page-header">
-        <h1>Terms & Conditions</h1>
-        <p>Version 2.2, 9 November 2026</p>
-    </div>
-
-    <!-- Content -->
+    <main class="page">
     <div class="content">
         <h2>1. Introduction & Acceptance</h2>
         <ol>
@@ -434,22 +147,19 @@
             <li><a href="Reboc_BV_Terms_Conditions_v2.0.pdf">Version 2.0, 11 October 2026</a></li>
         </ul>
     </div>
+    </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-logo" style="font-size:1.5rem; font-weight:800; color:white;">REBOC<span style="color:#0ea5e9">.</span></div>
-            <ul class="footer-links">
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+    <div class="page">
+        <footer class="foot">
+            <ul class="foot-links">
+                <li><a href="index.html">Home</a></li>
                 <li><span class="current" aria-current="page">Terms &amp; Conditions</span></li>
                 <li><a href="privacy-notice.html">Privacy Notice</a></li>
                 <li><a href="human-rights-policy.html">Human Rights Policy</a></li>
             </ul>
+            <p>Reboc B.V. &bull; KvK/Chamber of Commerce: 27263706 &bull; BTW/VAT: NL817331025B01 &bull; Goudenregenplein 61, 2565 GK Den Haag, Netherlands</p>
             <p>&copy; 2026 Reboc B.V. All rights reserved.</p>
-            <div class="kvk-info">Reboc B.V. &bull; KvK/Chamber of Commerce: 27263706 &bull; BTW/VAT: NL817331025B01 &bull; Den Haag, Netherlands</div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

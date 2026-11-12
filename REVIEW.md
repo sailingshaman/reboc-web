@@ -502,3 +502,26 @@ Prepared in the compliance thread so there is one version of it. Recorded here b
 3. **A limitation of liability in the VSA.** The VSA caps nothing, and article 1.3 of Reboc's own terms gives the VSA priority, so the cap published in Terms v2.2 does not apply on this chain. The ask is a mutual limitation on the standard pattern: neither party liable for indirect or consequential loss, and each party's total liability under a work authorisation capped at the fees payable under that work authorisation, with the usual carve-outs for confidentiality, intellectual property infringement, and wilful misconduct or gross negligence.
 
 **Sequencing note.** Items 1 and 2 are characterisation. Item 3 is commercial. Mixing them has a cost: a request to correct template wording is small and tends to be handled by contract administration, while a request to renegotiate liability goes to legal and attracts scrutiny. There is also a presentational risk, in that asking to be recognised as a subcontractor responsible for delivery while simultaneously asking to cap that responsibility can be read as wanting the label without the risk. Item 3 should therefore be put as a standard commercial term, explicitly separate from items 1 and 2, and items 1 and 2 should not be made to wait for it.
+
+# Redesign, 12 November 2026
+
+The site moved from a marketing landing page to a plain document layout, on branch `claude/reboc-document-design`. All four pages now share one stylesheet, `site.css`.
+
+## What did not change
+
+**No legal text changed.** The `<div class="content">` block of the Terms, the Privacy Notice and the Human Rights Policy is byte for byte identical before and after, checked by hash during the conversion. Version numbers and dates are unchanged, and the PDF build scripts still read the pages the same way.
+
+The homepage copy is the copy that was live, with two losses: the section heading "Enterprise IT Assignments" and its subtitle "The areas in which Reboc delivers assignments." are replaced by the margin label "Areas of work".
+
+## What changed
+
+- **Layout.** No hero, cards, icons, gradients or animation. One column of text with labels in the margin.
+- **Colour.** Light scheme "Admiralty" (chart paper, pale blue behind the masthead, magenta labels). Visitors whose device is in dark mode get "Night watch", red on black. Both pass WCAG AA contrast for body and secondary text.
+- **Maritime details.** Signal flags spelling REBOC under the wordmark, a chart scale border under the masthead, the position of Den Haag in the header, and red and green markers on the client and specialist columns. None of it is in the wording.
+- **Fonts.** System fonts only. The previous pages loaded Inter from Google Fonts on every visit, a third-party request the Privacy Notice never mentioned. That request is gone.
+- **Scripts.** No JavaScript remains on any page apart from the structured data.
+- **Company detail.** The VAT number in the homepage structured data read `NL8173.31.025.B01`; it now matches the footer, `NL817331025B01`.
+
+## Open before this goes live
+
+**The contact form is removed, and the Privacy Notice still describes it.** The homepage now gives the email address, phone number and postal address as text. The Privacy Notice (sections 2, 3, 4, 5 and 7) still refers to contact form submissions and to Formspree as their processor. Before this design is published, either the form goes back, or the notice is updated as a new version. The update depends on a fact only Reboc knows: whether earlier submissions still held at Formspree will be deleted. If they remain, Formspree stays a processor for that historic data.

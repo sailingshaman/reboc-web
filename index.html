@@ -86,8 +86,8 @@
     }
     </script>
 
-    <link rel="stylesheet" href="site.css?v=2">
-    <script src="site.js?v=2"></script>
+    <link rel="stylesheet" href="site.css?v=3">
+    <script src="site.js?v=3"></script>
 </head>
 <body>
     <div class="top"><div class="page">
@@ -182,7 +182,7 @@
                     <li><span class="k">Phone</span><a href="tel:+31705690259">+31 (0)70 569 0259</a></li>
                     <li><span class="k">Address</span>Goudenregenplein 61, 2565 GK Den Haag, Netherlands</li>
                 </ul>
-                <form class="form" action="https://formspree.io/f/xwvrykyr" method="POST">
+                <form class="form" action="https://formspree.io/f/xwvrykyr" method="POST" autocomplete="off">
                     <h3>Send us a message</h3>
                     <div class="pair">
                         <div class="field">
@@ -202,7 +202,9 @@
                         <label for="message">Message</label>
                         <textarea id="message" name="message" required placeholder="Tell us about your project or inquiry..."></textarea>
                     </div>
+                    <input class="trap" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <button type="submit" class="send">Send Message</button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
                 </form>
             </div>
         </section>

@@ -71,3 +71,24 @@
         });
     });
 })();
+
+/* Section menu on the homepage: mark the section being read. */
+(function () {
+    document.addEventListener('DOMContentLoaded', function () {
+        var links = [].slice.call(document.querySelectorAll('.jump a'));
+        if (!links.length) { return; }
+        var targets = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+        function mark() {
+            var current = -1;
+            targets.forEach(function (t, i) { if (t && t.getBoundingClientRect().top <= 140) { current = i; } });
+            if (window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 2) { current = links.length - 1; }
+            links.forEach(function (a, i) {
+                a.classList.toggle('here', i === current);
+                if (i === current) { a.setAttribute('aria-current', 'true'); } else { a.removeAttribute('aria-current'); }
+            });
+        }
+        window.addEventListener('scroll', mark, { passive: true });
+        window.addEventListener('resize', mark);
+        mark();
+    });
+})();

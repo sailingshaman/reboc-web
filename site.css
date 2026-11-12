@@ -60,6 +60,9 @@ a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 /* Masthead */
 .mast { display: flex; justify-content: space-between; align-items: flex-end; gap: 1.5rem; padding: 2.75rem 0 1.25rem; }
 .word { font-family: var(--sans); font-weight: 800; font-size: 1.5rem; letter-spacing: 0.28em; line-height: 1; display: block; text-decoration: none; }
+/* The full stop after the wordmark, in the label colour. Pulled in so the letterspacing
+   of the wordmark does not leave it stranded. */
+.word .dot { color: var(--label); margin-left: -0.16em; letter-spacing: 0; }
 .flags { display: flex; gap: 4px; margin-top: 0.7rem; }
 .flags svg { width: 17px; height: 17px; display: block; }
 /* Hovering a flag names its letter in the phonetic alphabet. */

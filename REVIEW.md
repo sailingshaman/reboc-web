@@ -522,6 +522,6 @@ The homepage copy is the copy that was live, with two losses: the section headin
 - **Scripts.** No JavaScript remains on any page apart from the structured data.
 - **Company detail.** The VAT number in the homepage structured data read `NL8173.31.025.B01`; it now matches the footer, `NL817331025B01`.
 
-## Open before this goes live
+## Contact form
 
-**The contact form is removed, and the Privacy Notice still describes it.** The homepage now gives the email address, phone number and postal address as text. The Privacy Notice (sections 2, 3, 4, 5 and 7) still refers to contact form submissions and to Formspree as their processor. Before this design is published, either the form goes back, or the notice is updated as a new version. The update depends on a fact only Reboc knows: whether earlier submissions still held at Formspree will be deleted. If they remain, Formspree stays a processor for that historic data.
+The contact form stays, restyled to match, with the same fields and the same Formspree endpoint as before. The Privacy Notice already describes it, so nothing in the notice needs to change for this design to go live.

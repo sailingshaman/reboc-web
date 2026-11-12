@@ -179,6 +179,28 @@
                     <li><span class="k">Phone</span><a href="tel:+31705690259">+31 (0)70 569 0259</a></li>
                     <li><span class="k">Address</span>Goudenregenplein 61, 2565 GK Den Haag, Netherlands</li>
                 </ul>
+                <form class="form" action="https://formspree.io/f/xwvrykyr" method="POST">
+                    <h3>Send us a message</h3>
+                    <div class="pair">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name" autocomplete="name">
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="How can we help?">
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Tell us about your project or inquiry..."></textarea>
+                    </div>
+                    <button type="submit" class="send">Send Message</button>
+                </form>
             </div>
         </section>
 

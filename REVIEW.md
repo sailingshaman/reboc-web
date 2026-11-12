@@ -516,10 +516,10 @@ The homepage copy is the copy that was live, with two losses: the section headin
 ## What changed
 
 - **Layout.** No hero, cards, icons, gradients or animation. One column of text with labels in the margin.
-- **Colour.** Light scheme "Admiralty" (chart paper, pale blue behind the masthead, magenta labels). Visitors whose device is in dark mode get "Night watch", red on black. Both pass WCAG AA contrast for body and secondary text.
+- **Colour.** Light scheme "Admiralty" (chart paper, pale blue behind the masthead, magenta labels). Everyone gets this scheme by default. A small day and night switch in the masthead turns on "Night watch", red on black; it is never chosen automatically. Both pass WCAG AA contrast for body and secondary text.
 - **Maritime details.** Signal flags spelling REBOC under the wordmark, a chart scale border under the masthead, the position of Den Haag in the header, and red and green markers on the client and specialist columns. None of it is in the wording.
 - **Fonts.** System fonts only. The previous pages loaded Inter from Google Fonts on every visit, a third-party request the Privacy Notice never mentioned. That request is gone.
-- **Scripts.** No JavaScript remains on any page apart from the structured data.
+- **Scripts.** The only script is `site.js`, some thirty lines for the day and night switch. It remembers the visitor's choice in their own browser (local storage) so it holds from page to page. Nothing is sent to Reboc or anyone else, and no cookie is set, so the Privacy Notice statement that the site uses no cookies or tracking stays true.
 - **Company detail.** The VAT number in the homepage structured data read `NL8173.31.025.B01`; it now matches the footer, `NL817331025B01`.
 
 ## Contact form

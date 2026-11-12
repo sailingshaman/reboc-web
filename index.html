@@ -24,9 +24,8 @@
 
     <!-- Additional SEO -->
     <meta name="application-name" content="Reboc B.V.">
-    <meta name="color-scheme" content="light dark">
-    <meta name="theme-color" content="#d9ebf4" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#090505" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#d9ebf4">
     <meta name="geo.region" content="NL-ZH">
     <meta name="geo.placename" content="Den Haag">
 
@@ -87,7 +86,8 @@
     }
     </script>
 
-    <link rel="stylesheet" href="site.css">
+    <link rel="stylesheet" href="site.css?v=2">
+    <script src="site.js?v=2"></script>
 </head>
 <body>
     <div class="top"><div class="page">
@@ -102,12 +102,15 @@
                     <svg viewBox="0 0 20 20" aria-hidden="true"><rect width="20" height="20" fill="#0b3d91"/><rect y="4" width="20" height="12" fill="#ffffff"/><rect y="8" width="20" height="4" fill="#c8102e"/></svg>
                 </span>
             </div>
-            <p class="fix">52&deg;04&prime;N 004&deg;16&prime;E<br>The Hague, delivering since 2004</p>
+            <div class="aside">
+                <p class="fix">52&deg;04&prime;N 004&deg;16&prime;E<br>The Hague, delivering since 2004</p>
+                <button type="button" class="watch" role="switch" aria-checked="false" aria-label="Night watch display, red on black" hidden><span class="day">Day</span><span class="dip" aria-hidden="true"></span><span class="night">Night</span></button>
+            </div>
         </header>
         <div class="scale" aria-hidden="true"></div>
         <section class="lead">
             <h1>Enterprise IT delivery, through <em>senior independent specialists</em></h1>
-            <p>Reboc B.V. is a subcontractor to the professional services organisations of enterprise software vendors. We deliver through independent specialists, each working through their own company.</p>
+            <p>Reboc B.V. is a subcontractor to enterprise software vendors. The work is done by independent specialists, each with their own company.</p>
         </section>
     </div></div>
 

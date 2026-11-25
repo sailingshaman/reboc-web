@@ -70,14 +70,15 @@ a:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 .flag:hover::after { content: attr(data-name); position: absolute; left: 0; top: calc(100% + 4px); font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; color: var(--ink); pointer-events: none; }
 .fix { font-family: var(--mono); font-size: 0.75rem; line-height: 1.6; color: var(--muted); text-align: right; letter-spacing: 0.02em; }
 
-/* Day and night switch, drawn as a small panel DIP switch */
+/* Day and night switch, drawn as a small panel DIP switch. Night is on the left, day on
+   the right, and the block sits beside the one that is on. */
 .aside { display: flex; flex-direction: column; align-items: flex-end; gap: 0.3rem; }
 .watch { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.3rem 0; background: none; border: 0; cursor: pointer; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
 .watch[hidden] { display: none; }
 .watch:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
 .dip { position: relative; width: 1.9rem; height: 1rem; border: 1px solid var(--ink); background: var(--paper); }
-.dip::after { content: ''; position: absolute; top: 2px; bottom: 2px; left: 2px; width: 0.7rem; background: var(--ink); transition: transform 0.15s ease; }
-html[data-theme="night"] .dip::after { transform: translateX(calc(1.9rem - 0.7rem - 6px)); }
+.dip::after { content: ''; position: absolute; top: 2px; bottom: 2px; left: 2px; width: 0.7rem; background: var(--ink); transform: translateX(calc(1.9rem - 0.7rem - 6px)); transition: transform 0.15s ease; }
+html[data-theme="night"] .dip::after { transform: none; }
 .watch .day { color: var(--ink); font-weight: 700; }
 html[data-theme="night"] .watch .day { color: var(--muted); font-weight: 400; }
 html[data-theme="night"] .watch .night { color: var(--ink); font-weight: 700; }

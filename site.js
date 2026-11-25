@@ -72,12 +72,17 @@
     });
 })();
 
-/* Section menu on the homepage: mark the section being read. */
+/* Section menu: on the homepage, mark the section being read. On the other pages the
+   same links lead back to the homepage sections, and there is nothing to mark. */
 (function () {
     document.addEventListener('DOMContentLoaded', function () {
         var links = [].slice.call(document.querySelectorAll('.jump a'));
         if (!links.length) { return; }
-        var targets = links.map(function (a) { return document.querySelector(a.getAttribute('href')); });
+        var targets = links.map(function (a) {
+            var href = a.getAttribute('href');
+            return href.charAt(0) === '#' ? document.querySelector(href) : null;
+        });
+        if (!targets.some(function (t) { return t; })) { return; }
         function mark() {
             var current = -1;
             targets.forEach(function (t, i) { if (t && t.getBoundingClientRect().top <= 140) { current = i; } });
